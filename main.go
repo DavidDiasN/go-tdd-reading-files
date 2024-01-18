@@ -5,9 +5,10 @@ import (
 	blogposts "main/blogposts"
 )
 
+var posts []blogposts.Post
+posts = blogposts.NewPostsFromFS(someFS)
+
 func main() {
-	fmt.Println("Hello")
-	post := blogposts.Post{}
-	fmt.Println(post)
+	
 
 }
