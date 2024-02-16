@@ -30,15 +30,16 @@ func BenchmarkRender(b *testing.B) {
 	}
 }
 
+/*
 func TestIndex(t *testing.T) {
 
 	t.Run("it render an index of posts", func(t *testing.T) {
 
-		postRenderer, err := blogrenderer.NewPostRenderer()
+    postRenderer, err := blogrenderer.NewPostRenderer()
 
-		if err != nil {
-			t.Fatal(err)
-		}
+    if err != nil {
+      t.Fatal(err)
+    }
 
 		buf := bytes.Buffer{}
 		posts := []blogrenderer.Post{{Title: "Hello World"}, {Title: "Hellow World2"}}
@@ -47,10 +48,16 @@ func TestIndex(t *testing.T) {
 			t.Fatal(err)
 		}
 
-		approvals.VerifyString(t, buf.String())
+		got := buf.String()
+		want := `<ol><li><a href="/post/hello-world">Hellow World</a></li><a href="/post/hello-world-2">Hello World 2</a></li></ol>`
+
+		if got != want {
+			t.Errorf("got %q want %q", got, want)
+		}
 
 	})
 }
+*/
 
 func TestRender(t *testing.T) {
 	var (

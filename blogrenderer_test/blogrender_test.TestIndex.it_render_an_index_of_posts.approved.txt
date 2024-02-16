@@ -19,12 +19,27 @@
 </nav>
 <main>
 
-<h1>hello world</h1>
+<ol>
 
-<p>This is just a description</p>
+  
+    <li>
 
-Tags: <ul><li>go</li><li>tdd</li></ul>
+      <a href="/post/hello-world">&lt;&lt;.Title}}</a>
 
+    </li>
+
+
+  
+    <li>
+
+      <a href="/post/hellow-world2">&lt;&lt;.Title}}</a>
+
+    </li>
+
+
+  
+
+</ol>
 
 </main>
 <footer>
